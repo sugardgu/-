@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 안전점검 보고서 통합 검색</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <h1>안전점검 보고서 통합 검색</h1>
+      <div class="search-container">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input id="q" type="text" placeholder="검색어를 입력하세요 (예: 점검, 예산)..." autocomplete="off">
+      </div>
+      <div class="result-count" id="count">결과 불러오는 중...</div>
+    </div>
+  </header>
+  
+  <main class="container">
+    <div id="list" class="card-grid"></div>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
